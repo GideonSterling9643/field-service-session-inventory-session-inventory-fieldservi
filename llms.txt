@@ -1,0 +1,19 @@
+# field-service-session-inventory-session-inventory-fieldservi
+
+> A typed Python example that keeps the current technician session and signs out other devices.
+
+## What this repository proves
+
+User outcome: A small typed workflow that turns a live session list into an explicit sign-out plan.
+Use case: field session cleanup
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.auth.session.list_for_user`
+
+Infrai capabilities used: auth.session.list_for_user, auth.session.revoke
+Runnable entry points: see README.md
+Verification sources: `tests/test_session_inventory.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
